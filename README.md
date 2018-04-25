@@ -4,6 +4,8 @@ This repository contains algorithims created in MATLAB for MECH 105
 The Simpson function approximates the integral of a given function
     
     
+    I = Simpson(x,y)
+    
     Intputs
     
     
