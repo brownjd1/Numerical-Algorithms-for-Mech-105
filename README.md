@@ -33,5 +33,50 @@ The extrema function uses the golden ratio to estimate either a max or min of a 
             1 - max extrema estimate
     Outputs
         xr - extrema estimate
+### falsePosition Algorithm
+The falsePostition function approximates the roots of a function inputed by the user
 
-       
+    [root,fx,ea,iter] = falsePosition(func, xl,xu,es,maxiter)
+    Inupts
+        -func: function in terms of x 
+        - If it is an ananymous function follow syntax @(x) func
+        -xl: lower limit 
+        -xu: upper limit
+        -es: desired relative error (defaults to 0.0001%)
+        -maxiter: max number of iterations (defaults to 200)
+    Outputs
+        -root: approximated root
+        -fx: given function evaluated at the root
+        -ea: approximate error
+        -iter: iterations performed
+### luFactor Algorithm
+The function luFactor takes any sized square matrix and outputs a lower triangular matrix, an upper triangular matrix, and the pivot matrix
+
+    [L,U,P] = luFactor(A)
+    Inputs
+        - A : Square Matrix
+    Outputs
+        - L : Lower Triangular Matrix
+        - U : Upper Triangular Matrix
+        - P : Pivot Matrix
+### paraInter Algorithm
+The paraInter function does parabolic interplotation for an equation 
+
+    [x4] = paraInter(f,x1,x2,x3,n)
+    Inputs
+        -f: function
+        -x1: Initial Guess
+        -x2: -------------
+        -x3: -------------
+        -n: number of iterations
+    Outputs
+        -x4: Guess
+### specialMatrix Algorithm
+The specialMatrix function takes an input of the sizing of a square matrix with each row starting with the number of the row and each column will start with the number of the column, with every other variable in the matrix being the sum of the element above it and the element to the left of it. 
+    
+    [rn] = specialMatrix(n,m)
+    Input 
+        n - number of rows
+        m - number of columns
+    Output
+        rn - special matrix
