@@ -16,5 +16,9 @@ for i = tspan(1) : tspan(s)% Initialize for loop to run for the domain
         err = (abs((guess2 - guess1))/guess1)*100;
         iter = iter + 1;
     end
+    t = i + 1;
+    y = guess2;
+    
+end
 end
 
