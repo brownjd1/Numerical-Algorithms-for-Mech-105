@@ -80,3 +80,17 @@ The specialMatrix function takes an input of the sizing of a square matrix with 
         m - number of columns
     Output
         rn - special matrix
+### Heun Algorithm
+The Heun function uses Heun's method to approximate the y values given
+dydt of an equation and an initial value
+
+    Inputs
+        dydt - differential equation
+        tspan - interval [i n]
+        y0 - initial condition
+        h - step size
+        es - error condition
+        maxit - iteration conditon
+    Outputs
+        t - t values
+        y - approximated y values
