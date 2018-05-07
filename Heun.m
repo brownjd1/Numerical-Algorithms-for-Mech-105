@@ -48,6 +48,6 @@ plot(t,y,'x--')%Plot points
 xlabel('t values')
 ylabel('est y values')
 end
-cammie is cool
+
 
 
